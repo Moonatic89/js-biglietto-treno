@@ -6,7 +6,7 @@ const age = parseInt(prompt("How old are you?"));
 
 //Utility Variable Initialization
 let discount = 1;
-let pricePerKilometer = 0,21;
+let pricePerKilometer = 0.21;
 
 //Define discount
 if (age < 18) {
@@ -18,14 +18,8 @@ if (age < 18) {
 }
 //Math 
 
-console.log(distance);
-console.log(age);
-console.log(discount);
-
-
-
 const finalPrice = (distance * pricePerKilometer) * discount;
 
 //Print Price
 
-document.getElementById("ticket").innerHTML = finalPrice;
+document.getElementById("ticket").innerHTML = finalPrice.toFixed(2);
