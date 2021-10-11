@@ -5,7 +5,7 @@ const distance = parseInt(prompt("How many KMs you want to travel?"));
 const age = parseInt(prompt("How old are you?"));
 
 //Utility Variable Initialization
-let discount = 0;
+let discount = 1;
 let pricePerKilometer = 0.21;
 
 //Define discount
