@@ -8,13 +8,16 @@ const age = parseInt(prompt("How old are you?"));
 let discount;
 let pricePerKilometer = 0.21;
 
-//Math 
+//Define discount
 if (age < 18) {
     //Apply discount *.2
 } else if (age >= 65) {
     //Apply discount *.4
 }
 //no other else needed
+
+//Math 
+
 
 //Print Price
 
