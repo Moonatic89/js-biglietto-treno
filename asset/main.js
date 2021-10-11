@@ -6,7 +6,7 @@ const age = parseInt(prompt("How old are you?"));
 
 //Utility Variable Initialization
 let discount = 1;
-let pricePerKilometer = 0.21;
+let pricePerKilometer = 0,21;
 
 //Define discount
 if (age < 18) {
@@ -24,7 +24,7 @@ console.log(discount);
 
 
 
-const finalPrice = (distance * age) * discount;
+const finalPrice = (distance * pricePerKilometer) * discount;
 
 //Print Price
 
