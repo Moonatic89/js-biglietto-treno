@@ -5,19 +5,27 @@ const distance = parseInt(prompt("How many KMs you want to travel?"));
 const age = parseInt(prompt("How old are you?"));
 
 //Utility Variable Initialization
-let discount;
+let discount = 0;
 let pricePerKilometer = 0.21;
 
 //Define discount
 if (age < 18) {
-    //Apply discount *.2
+    discount = 0.8;
+    //price at 0.8 is 20% discount
 } else if (age >= 65) {
-    //Apply discount *.4
+    discount = 0.6;
+    //price at 0.6 is 40% discount
 }
-//no other else needed
-
 //Math 
 
+console.log(distance);
+console.log(age);
+console.log(discount);
+
+
+
+const finalPrice = (distance * age) * discount;
 
 //Print Price
 
+document.getElementById("ticket").innerHTML = finalPrice;
